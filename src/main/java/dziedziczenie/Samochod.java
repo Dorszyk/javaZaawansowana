@@ -9,7 +9,7 @@ public class Samochod {
     protected String rocznik;
     protected int predkosc;
     private boolean swiatla;
-    protected String dupa;
+  
 
     public Samochod(String kolor, String marka, String rocznik, int predkosc, boolean swiatla) {
         this.kolor = kolor;
