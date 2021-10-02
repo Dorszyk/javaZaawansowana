@@ -1,4 +1,4 @@
-package superheroes;
+package Day1.superheroes;
 
 public class SuperBohater {
 
@@ -12,7 +12,7 @@ public class SuperBohater {
 
     @Override
     public String toString() {
-        return "superheroes.SuperBohater{" +
+        return "Day1.superheroes.SuperBohater{" +
                 "nazwa='" + nazwa + '\'' +
                 ", supermoc='" + supermoc + '\'' +
                 '}';

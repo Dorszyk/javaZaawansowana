@@ -1,4 +1,4 @@
-package superheroes;
+package Day1.superheroes;
 
 public class Bohaterowie {
 

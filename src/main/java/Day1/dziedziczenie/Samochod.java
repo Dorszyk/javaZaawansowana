@@ -1,4 +1,4 @@
-package dziedziczenie;
+package Day1.dziedziczenie;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ public class Samochod {
     protected String rocznik;
     protected int predkosc;
     private boolean swiatla;
-  
+
 
     public Samochod(String kolor, String marka, String rocznik, int predkosc, boolean swiatla) {
         this.kolor = kolor;

@@ -1,4 +1,6 @@
-package bilety;
+package Day1.bilety;
+
+import Day1.bilety.Bilet;
 
 public class Main {
 

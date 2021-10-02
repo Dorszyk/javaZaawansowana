@@ -1,4 +1,4 @@
-package dziedziczenie;
+package Day1.dziedziczenie;
 
 public class Hippo extends Mammal{
     int age;

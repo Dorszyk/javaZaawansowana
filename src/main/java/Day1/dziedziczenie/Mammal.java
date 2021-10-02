@@ -1,4 +1,4 @@
-package dziedziczenie;
+package Day1.dziedziczenie;
 
 public class Mammal extends Animal{
 

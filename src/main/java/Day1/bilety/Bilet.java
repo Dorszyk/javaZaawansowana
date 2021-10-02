@@ -1,4 +1,4 @@
-package bilety;
+package Day1.bilety;
 
 public enum Bilet {
     ULGOWY_GODZINNY(1.6d, 1),
