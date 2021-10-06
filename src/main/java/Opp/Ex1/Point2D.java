@@ -29,7 +29,7 @@ public class Point2D {
         return new float[]{x, y};
     }
 
-    public void setYX(float x, float y) {
+    public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
