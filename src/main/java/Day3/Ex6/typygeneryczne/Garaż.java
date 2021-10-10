@@ -1,22 +1,43 @@
 package Day3.Ex6.typygeneryczne;
 
+import java.util.Optional;
+
 public class Garaż<T> {
 
-    private T auto1;
-    private T auto2;
+    private T one;
+    private T two;
 
-    public Garaż(T auto1, T auto2) {
-        this.auto1 = auto1;
-        this.auto2 = auto2;
+    public Garaż(T one, T two) {
+        this.one = one;
+        this.two = two;
     }
 
-    public void zaparkuj(T auto){
-        System.out.println("Auto zaparkowane");
+    public void zaparkuj(T something) {
+        if (this.one == null) {
+            this.one = something;
+        } else if (this.two == null) {
+            this.two = something;
+        } else
+            System.out.println("Garaż pełny, nie można zaparkować");
 
     }
-    public  T wyprowadz(T auto){
-        System.out.println("Wyprowadz auto");
-        return auto;
 
+    public T wyprowadz(T sthtoGetOut) {
+        if (sthtoGetOut != null) {
+            if (sthtoGetOut.equals(this.one)) {
+                T temp = this.one;
+                this.one = null;
+                return this.one;
+            } else if (sthtoGetOut.equals(this.two)) {
+                T temp = this.two;
+                this.two = null;
+                return this.two;
+            } else {
+                System.out.println(" No such object in a garage");
+            }
+        }else {
+            System.out.println("I don't know what you want");
+        }
+        return sthtoGetOut;
     }
 }
