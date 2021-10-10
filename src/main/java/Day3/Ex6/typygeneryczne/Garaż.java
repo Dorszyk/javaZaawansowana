@@ -1,7 +1,5 @@
 package Day3.Ex6.typygeneryczne;
 
-import java.util.Optional;
-
 public class Garaż<T> {
 
     private T one;
@@ -31,7 +29,7 @@ public class Garaż<T> {
             } else if (sthtoGetOut.equals(this.two)) {
                 T temp = this.two;
                 this.two = null;
-                return this.two;
+                return temp;
             } else {
                 System.out.println(" No such object in a garage");
             }
