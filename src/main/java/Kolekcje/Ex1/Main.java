@@ -12,6 +12,5 @@ public class Main {
         arrayList.remove(0);
         System.out.println(arrayList.get(0));
         arrayList.display();
-
     }
 }
