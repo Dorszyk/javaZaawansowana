@@ -1,6 +1,6 @@
 package Kolekcje.Ex2;
 
-enum Genre {
-    ACTION,FANTASY, CRIME
+public enum Genre {
+    ACTION,FANTASY, CRIME, SEX
 
 }

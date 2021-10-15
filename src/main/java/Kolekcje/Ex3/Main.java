@@ -12,14 +12,12 @@ public class Main {
         }
         Set<Integer> uniqueValues = new HashSet<>();
         Set<Integer> duplicateValues = new HashSet<>();
-        for (Integer value : values){
-            if (!uniqueValues.add(value)){
+        for (Integer value : values) {
+            if (!uniqueValues.add(value)) {
                 duplicateValues.add(value);
             }
         }
         System.out.println("Unique :" + uniqueValues);
         System.out.println("Duplicate :" + duplicateValues);
-
-
     }
 }
