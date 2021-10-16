@@ -6,6 +6,14 @@ public class Trapez extends Figura {
     private double a, b, h;
 
     public Trapez(double a, double b, double h) {
+        if( a < 0){
+            throw new IllegalArgumentException("Nie da się stworzyć trapezu z ujemnymi wartościami");
+        }if(b < 0){
+            throw new IllegalArgumentException("Nie da się stworzyć trapezu z ujemnymi wartościami");
+        }if(h < 0){
+            throw new IllegalArgumentException("Nie da się stworzyć trapezu z ujemnymną wysokością");
+
+        }
         this.a = a;
         this.b = b;
         this.h = h;

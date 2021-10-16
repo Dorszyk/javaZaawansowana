@@ -8,7 +8,7 @@ public class Biblioteka {
         this.egzemplarzs = egzemplarzs;
     }
 
-    public Egzemplarz[] findByTitle(String title) {
+    public Egzemplarz[] findByTitle(String title) throws NoBookFoundException {
         if (title != null) {
             int counterOfFoundBooks = 0;
             for (Egzemplarz egzemplarz : egzemplarzs) {
@@ -22,6 +22,9 @@ public class Biblioteka {
                 if ((egzemplarzs[i].getTile().contains(title))) {
                     foundBooks[--counterOfFoundBooks] = egzemplarzs[i];
                 }
+            }
+            if(foundBooks.length == 0){
+                throw new NoBookFoundException();
             }
             return foundBooks;
         }

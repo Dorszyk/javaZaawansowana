@@ -13,7 +13,13 @@ public class Main {
         Egzemplarz[] egzemplarzs = new Egzemplarz[]{egzemplarz1,egzemplarz2};
         Biblioteka biblioteka = new Biblioteka(egzemplarzs);
 
-        System.out.println(Arrays.toString(biblioteka.findByTitle("Bajki dla dzieci")));
+        try {
+            System.out.println(Arrays.toString(biblioteka.findByTitle("Akademia kleksa")));
+        }catch (NoBookFoundException e){
+            e.printStackTrace();
+            System.out.println("Nie znaleziono ksiazki o takim tytule");
+        }
+
         //System.out.println(Arrays.toString(biblioteka.findByAuthor("Bajki dla dzieci")));
         //System.out.println(biblioteka.findByAutorsWithMostBook());
 

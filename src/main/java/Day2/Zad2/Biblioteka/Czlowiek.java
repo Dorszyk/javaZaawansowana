@@ -1,5 +1,6 @@
 package Day2.Zad2.Biblioteka;
 
+import java.util.Locale;
 import java.util.Objects;
 
 public abstract class Czlowiek {
@@ -8,6 +9,9 @@ public abstract class Czlowiek {
     protected String surname;
 
     public Czlowiek(String name, String surname) {
+        if(surname == null || surname.charAt(0) != surname.toUpperCase().charAt(0)){
+            throw new  IllegalSurnameException(surname);
+        }
         this.name = name;
         this.surname = surname;
     }
