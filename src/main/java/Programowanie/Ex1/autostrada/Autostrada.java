@@ -10,7 +10,6 @@ public class Autostrada {
 
     private Map<String, InformacjeOpojezdzie> mapaPojazdow = new HashMap<>();
 
-
     public void wjazdPojazduNaAutostradę(String numerRejestracyjny, TypPojazdu typPojazdu) {
         InformacjeOpojezdzie informacjeOPojezdzie = new InformacjeOpojezdzie(numerRejestracyjny, typPojazdu, LocalDateTime.now());
         mapaPojazdow.put(numerRejestracyjny, informacjeOPojezdzie);

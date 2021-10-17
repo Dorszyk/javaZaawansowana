@@ -9,7 +9,6 @@ public class Main {
 
         String komenda;
         do {
-
             System.out.println("Podaj komendę:");
             komenda = scanner.nextLine();
 
@@ -17,7 +16,6 @@ public class Main {
 
 
             if (słowa[0].equalsIgnoreCase("wjazd")) {
-
                 if (słowa.length >= 3) {
                     String nrRej = słowa[1];
                     String slowoTypPojazdu = słowa[2];
@@ -28,10 +26,8 @@ public class Main {
                         }
                     } catch (NieMoznaZnalezcPojazduException e) {
 
-
                         try {
                             TypPojazdu typ = TypPojazdu.valueOf(slowoTypPojazdu.toUpperCase());
-
                             autostrada.wjazdPojazduNaAutostradę(nrRej, typ);
                         } catch (IllegalArgumentException iae) {
 
@@ -39,23 +35,24 @@ public class Main {
                         }
                     }
                 }
+
             } else if (słowa[0].equalsIgnoreCase("wyjazd")) {
 
-                if (słowa.length >= 2) {
-                    String nrRej = słowa[1];
+                    if (słowa.length >= 2) {
+                        String nrRej = słowa[1];
 
-                    System.out.println(autostrada.wyjazdPojazdu(nrRej));
-                }
+                        System.out.println(autostrada.wyjazdPojazdu(nrRej));
+                    }
             } else if (słowa[0].equalsIgnoreCase("sprawdz")) {
 
-                if (słowa.length >= 2) {
-                    String nrRej = słowa[1];
-
-                    System.out.println(autostrada.znajdzPojazd(nrRej));
+                    if (słowa.length >= 2) {
+                        String nrRej = słowa[1];
+                        System.out.println(autostrada.znajdzPojazd(nrRej));
+                    }
                 }
-            }
 
-        } while (!komenda.equalsIgnoreCase("zamknij"));
+        }while (!komenda.equalsIgnoreCase("zamknij")) ;
     }
 }
+
 
