@@ -19,8 +19,6 @@ public class App {
         System.out.println(videoService.listAllEvenEpisodesAndSeasons());
         System.out.println(videoService.clipVideoFromEvenEpisodesAndOddSeasons());
         System.out.println(videoService.previewVideoFromOddEpisodesFromEvenSeadsons());
-
-
     }
 }
 
