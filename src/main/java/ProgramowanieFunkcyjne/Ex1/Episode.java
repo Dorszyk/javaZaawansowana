@@ -1,10 +1,9 @@
 package ProgramowanieFunkcyjne.Ex1;
 
-import lombok.Data;
 
 import java.util.List;
 
-@Data
+
 public class Episode {
 
     public String episodeName;
