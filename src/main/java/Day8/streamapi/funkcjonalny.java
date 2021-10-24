@@ -1,4 +1,4 @@
-package ProgramowanieFunkcyjne.Ex2Pusty;
+package Day8.streamapi;
 
 @FunctionalInterface
 public interface funkcjonalny {
