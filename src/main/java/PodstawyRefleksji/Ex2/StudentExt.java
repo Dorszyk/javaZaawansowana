@@ -1,24 +1,23 @@
-package PodstawyRefleksji.Ex1;
+package PodstawyRefleksji.Ex2;
 
 
 import lombok.Data;
 
 @Data
 
-public class Student {
+public class StudentExt {
 
     private String name;
     private String lastName;
     private int index;
     private String typeOfStudents;
 
-    public Student(){
-
+    public  StudentExt(){
 
     }
 
 
-    public Student(String name, String lastName, int index, String typeOfStudents) {
+    public StudentExt(String name, String lastName, Integer index, String typeOfStudents) {
         this.name = name;
         this.lastName = lastName;
         this.index = index;
