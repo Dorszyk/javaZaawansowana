@@ -19,7 +19,7 @@ public class Biblioteka {
                 .findAny();
     }
 
-    public Optional<Egzemplarz> findByAuthor(Autor author) {
+    /*public Optional<Egzemplarz> findByAuthor(Autor author) {
         return egzemplarzs.stream()
                 .filter((s) -> s.autor.equals(author))
                 .distinct( e ->)
@@ -31,6 +31,8 @@ public class Biblioteka {
         return () ;
 
     }
+
+     */
 
     private int findIndexOfMaxValue(int[] numberOfBooksFromAuthor) {
         int currentMax = 0;
