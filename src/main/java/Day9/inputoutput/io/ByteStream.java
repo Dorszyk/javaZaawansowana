@@ -14,7 +14,7 @@ public class ByteStream {
 
 
         try {
-            in = new FileInputStream("C:src\\main\\resources\\user.txt");
+            in = new FileInputStream("src\\main\\resources\\user.txt");
             out = new FileOutputStream("src\\main\\resources\\user_output.txt");
             int c;
 
