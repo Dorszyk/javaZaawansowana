@@ -58,5 +58,14 @@ public class Fish {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "length=" + length +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                ", weigh=" + weigh +
+                ", flying=" + flying +
+                '}';
+    }
 }
