@@ -7,9 +7,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        List<String> list = new ArrayList(List.of("kjhgf","oiuy"));
-
-
+        var list = new ArrayList(List.of("piłka", "gryzak"));
+        List<String> list2 = new ArrayList(List.of("Zabawka"));
 
         Dog goldDog = new Dog.DogBuilder()
                 .age(2)
@@ -19,6 +18,16 @@ public class Main {
                 .build();
 
         System.out.println(goldDog);
-    }
 
+        Dog silverDog = new Dog.DogBuilder()
+                .age(2)
+                .name("Groźny")
+                .toys(list2)
+                .type("Zabójca")
+                .build();
+
+        System.out.println(silverDog);
+    }
 }
+
+

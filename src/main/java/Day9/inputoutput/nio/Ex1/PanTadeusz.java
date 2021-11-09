@@ -11,6 +11,8 @@ public class PanTadeusz {
 
     public static void main(String[] args) throws IOException {
 
+
+
         Path panTadeusz = Paths.get("C:\\Users\\piotr.doroszynski\\Desktop\\Java_SDA_49\\javaZaawansowana\\src\\main\\resources\\Pan_Tadeusz.txt");
         String wordToFind = "Tadeusz";
         System.out.println(countWordOccurancesInBook(wordToFind, panTadeusz));
