@@ -32,7 +32,7 @@ public enum Bilet {
                 ", czasJazdyWGodzinach=" + czasJazdyWGodzinach +
                 '}';
     }
-    private static Bilet getOdpowiedniBilet(int wiek, int czasJazdy, double dostepnaKwota) {
+    static Bilet getOdpowiedniBilet(int wiek, int czasJazdy, double dostepnaKwota) {
         Bilet odpowiedniBilet = null;
         if (wiek > 18) {
             if (czasJazdy > 60) {
@@ -54,5 +54,13 @@ public enum Bilet {
         return odpowiedniBilet;
     }
 
+     static void wyswietlWynik(Bilet bilet) {
+        if (bilet == Bilet.NORMALNY_CALODNIOWY || bilet == Bilet.NORMALNY_GODZINNY ||
+                bilet == Bilet.ULGOWY_CALODNIOWY || bilet == Bilet.ULGOWY_GODZINNY) {
+            System.out.println("Odpowiedni bilet: " + bilet);
+        } else if (bilet == Bilet.BRAK_BILET) {
+            System.out.println("Brak odpowiedniego biletu. Proszę doładować konto.");
+        }
+    }
 
 }

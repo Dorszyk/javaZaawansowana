@@ -1,10 +1,21 @@
 package Day1.dziedziczenie;
 
 public class Hippo extends Mammal{
-    int age;
+
+    String name = "Hipopotam";
+    int age = 20;
+
 
     public Hippo(String name, int age){
-        super(name);
+        super(name,age);
+    }
 
+
+    @Override
+    public String toString() {
+        return "Hippo{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                "} " ;
     }
 }
